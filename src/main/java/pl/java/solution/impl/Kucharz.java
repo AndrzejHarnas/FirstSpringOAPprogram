@@ -10,9 +10,17 @@ public class Kucharz implements IKucharz {
         this.imie = imie;
     }
 
-    public void pobierzSkładnikizMagazynu() {
+    public void pobierzSkladnikizMagazynu(int liczbaSkladnikow) {
+        System.out.println("Kucharz pobiera "+ liczbaSkladnikow +" skladnikow");
+    }
+
+    public void pobierzSkladnikizMagazynu() {
         System.out.println("Kucharz "+ imie + " pobiera składniki");
   //      throw new IllegalAccessError();
+    }
+
+    public void przygotujPizze(int idPizzy) {
+System.out.println("Kucharz przygotowuje pizze o id = " + idPizzy);
     }
 
     public void przygotujPizze() {
